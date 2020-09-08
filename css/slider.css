@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.head {
+  position: relative;
+}
+
+.slider {
+  position: static;
+}
+
+@media (min-width: 1200px) {
+  .head {
+    width: 1200px;
+    height: 680px;
+    margin-left: auto;
+    margin-right: auto; }
+  .slide {
+  width: 1200px;
+  height: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 100% 680px; }
+ .head .controls .prev,
+ .head .controls .next {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  margin-top: 25%;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  line-height: 30px; }
+  .dots div {
+  position: relative;
+  bottom: 70px;
+  margin: 1%;
+  border: 2px solid #f2f6f5;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots .active {
+  background-color: #f2f6f5; }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .head {
+    width: 100%;
+    height: 560px;
+    margin-left: auto;
+    margin-right: auto; }
+  .slide {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 100% 620px; }
+  .head .controls .prev,
+  .head .controls .next {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  margin-top: 260px;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  line-height: 30px; }
+  .dots div {
+  position: relative;
+  bottom: 70px;
+  margin: 1%;
+  border: 2px solid #f2f6f5;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots .active {
+  background-color: #f2f6f5; }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .head {
+    width: 100%;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto; }
+  .slide {
+  width: 100%;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 100% 480px; }
+  .head .controls .prev,
+  .head .controls .next {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  margin-top: 210px;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  line-height: 30px; }
+  .dots div {
+  position: relative;
+  bottom: 60px;
+  margin: 1%;
+  border: 2px solid #f2f6f5;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots .active {
+  background-color: #f2f6f5; }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .head {
+    width: 100%;
+    padding-top: 56.25%;
+    margin-left: auto;
+    margin-right: auto; }
+  .slide {
+  width: 100%;
+  padding-top: 56.25%;
+  text-align: center;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 100% 100%; }
+  .head .controls .prev,
+  .head .controls .next {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  margin-top: 25%;
+  height: 25px;
+  width: 25px;
+  font-size: 22px;
+  line-height: 25px; }
+  .controls {
+    display: none;
+    visibility: hidden;
+  }
+  .dots div {
+  position: relative;
+  bottom: 50px;
+  margin: 1%;
+  border: 2px solid #f2f6f5;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots .active {
+  background-color: #f2f6f5; }
+}
+
+@media (max-width: 600px) and (min-width: 450px) {
+  .head {
+    width: 100%;
+    padding-top: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+  .slide {
+  width: 100%;
+  padding-top: 80%;
+  text-align: center;
+  overflow: hidden;
+  background-position: center center; 
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 130% 100%; }
+  .controls {
+    display: none;
+    visibility: hidden;
+  }
+  .dots div {
+  position: relative;
+  bottom: 40px;
+  margin: 1%;
+  border: 2px solid #f2f6f5;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots .active {
+  width: 12px;
+  height: 12px;
+  background-color:  #f2f6f5; }
+}
+
+@media (max-width: 450px) {
+  .head {
+    width: 100%;
+    padding-top: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+  .slide {
+  width: 100%;
+  padding-top: 90%;
+  text-align: center;
+  overflow: hidden;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 120% 100%;}
+ .controls {
+    display: none;
+    visibility: hidden;
+  }
+  .dots div {
+  position: relative;
+  bottom: 30px;
+  margin: 2%;
+  border: 2px solid #f2f6f5;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots .active {
+  width: 11px;
+  height: 11px;
+  background-color: #f2f6f5; }
+}
+
+.head .slide {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: none;
+  animation: slide 2s ease;
+}
+.head .slide.active {
+  display: flex;
+}
+@keyframes slide {
+  0%{
+    opacity: 0; transform: scale(1.1); }
+  100%{
+    opacity: 1; transform: scale(1);
+  }
+}
+  
+.head .controls .prev,
+  .head .controls .next {
+  color: #212529;
+  background-color: #f8f9fa;
+  opacity: 0.5;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.head .controls .prev:hover,
+.head .controls .next:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  opacity: 1;
+  text-align: center;
+  border-radius: 50%;
+}
+.controls {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.head .controls .prev,
+.head .controls .next  {
+  position: relative;
+  display: inline-block;
+}
+
+.head .controls .prev {
+  margin-left: 20px;
+  padding-right: 3px;
+}
+.head .controls .next {
+  float: right;
+  padding-left: 3px;
+  margin-right: 20px;
+}
+
+.head .dots {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+  text-align: center;
+}
